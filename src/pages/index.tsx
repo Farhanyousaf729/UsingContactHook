@@ -59,7 +59,7 @@ export default function Home() {
                 usecontext.empty.map((ele: obj, i: any) => {
 
                   return (
-                    <tr className='text-center border-[1px] border-black '>
+                    <tr key = {i} className='text-center border-[1px] border-black '>
                       <td>{i + 1}</td>
                       <td>{ele.name}</td>
                       <td className='flex justify-around' ><AiOutlineEdit data-te-toggle="tooltip" title='Edit' /><AiOutlineArrowUp data-te-toggle="tooltip" title='Up' /><AiOutlineArrowDown data-te-toggle="tooltip" title='Down' /> < RiDeleteBinFill onClick={() => { handleDel(i) }} data-te-toggle="tooltip" title='Delet' /></td>
